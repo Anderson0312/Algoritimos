@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html">&larr; Voltar</a>
+    
+    <h2>Exercício 06</h2>
+
+    <p>No JavaScript desta página foi criado um objeto 'programador'.</p>
+
+    <p>Exiba no console os valores dos atributos 'nome' e 'email' deste objeto.</p>
+
+    <p>Em seguida, exiba uma string com o tempo de experiência do programador em anos.</p>
+
+    <script>
+
+        let programador = {
+            nome: 'Setembrino Trocatapas',
+            nascimento: new Date(1980, 8 - 1, 4),
+            linguagem: 'JavaScript',
+            anosExperiencia: 3,
+            email: 'set.brino@gmail.com',
+            github: 'https://github.com/Setbrino'
+        }
+
+        console.log(programador.nome)
+        console.log(programador.email)
+        console.log(`O tempo de experiencia do programador é ${programador.anosExperiencia} anos.`)
+
+    </script>
+
+</body>
+</html>
