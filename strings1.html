@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>Exercícios de LogAlg</title>
+
+<body>
+
+    <script>
+
+        let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        console.log('1)', str.slice(5, 10));
+        console.log('2)', str.slice(10));
+        console.log('3)', str.slice(-10));
+
+        /*
+        Obtenha os 10 últimos caracteres (-10);
+        E remova os 6 últimos caracteres (-6);
+        */
+        console.log('4)', str.slice(-10, -6));
+
+        console.log('----- substring() -----');
+
+        console.log('5)', str.substring(5, 10));
+        console.log('6)', str.substring(10));
+        console.log('7)', str.substring(-10)); // Pega string inteira
+        console.log('8)', str.substring(-10, -6)); // Não retorna nada
+
+        console.log('----- substr() -----');
+
+        /*
+        string.substr(x, y);
+        Obtém uma parte de 'string' à partir do caracter 'x' obtendo 'y' caracteres.
+        Se 'y' é omitido, pbtém até o final da string.
+        'y' deve ser sempre positivo.        
+        */
+
+        console.log('9)', str.substr(10));
+        console.log('10)', str.substr(10, 8));
+        console.log('11)', str.substr(-10)); // Pega 10 últimos caracteres
+        console.log('12)', str.substr(-10, 5));
+        console.log('13)', str.substr(0)); // Pega string inteira
+
+    </script>
+
+</body>
+
+</html>

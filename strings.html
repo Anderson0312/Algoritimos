@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de log</title>
+</head>
+<body>
+    
+    <script>
+        // Considere a string:
+        let txt1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // JavaScript trata strings como objetos
+        // JavaScript trata strings como arrays
+
+        console.log('1)', txt1);
+        console.log('2)', txt1[0]);
+        console.log('3)', txt1[14]);
+
+        // Contando caracteres da string
+        console.log('4) A string tem', txt1.length, 'caracteres.');
+
+        // Loop para varrer a string
+        for (let i = 0; i < txt1.length; i = i + 2) {
+            console.log(`txt[${i}] = `, txt1[i]);
+        }
+
+        // Considere a string
+        let nome = 'Joca da Silva';
+
+        // Loop para varrer a string (!)
+        let partes;
+        for (let i = 0; i < nome.length; i++) {
+            if (nome[i] !== ' ') console.log(nome[i]);
+        }
+        
+    </script>
+
+</body>
+</html>

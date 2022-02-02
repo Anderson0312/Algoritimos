@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>Exercícios de LogAlg</title>
+
+<body>
+
+    <script>
+        //               [0]         [1]    [2]  [3]
+        let myName = 'Setembrino Trocatapas de Souza';
+
+        console.log('1)', myName.split(' ')[0]);
+
+        let partes = myName.split(' ');
+        console.log('2)', partes);
+
+        // Converter de BR para sysDate
+        let date = '01/02/2022';
+        let dateParts = date.split('/');
+        console.log('3)', dateParts);
+
+        let dateSys = dateParts[2] + '-' + dateParts[1] + '-' + dateParts[0];
+
+        console.log('4)', dateSys);
+
+        // Converter de sysDate para BR
+        let partsBr = dateSys.split('-');
+        console.log('5)', partsBr);
+
+        let dateBr = partsBr[2] + '/' + partsBr[1] + '/' + partsBr[0];
+
+        console.log('6)', dateBr);
+
+    </script>
+
+</body>
+
+</html>

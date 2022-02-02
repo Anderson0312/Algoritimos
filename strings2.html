@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>Exercícios de LogAlg</title>
+
+<body>
+
+    <script>
+
+        let str = 'Microsoft Office e Microsoft Windows';
+
+        /*
+        string.replace(x, y);
+        Onde 'x' é a string de busca ou o que vai zer substituído.
+        e 'y' é string que vai substituir.
+
+        OBS1: Somente a primeira ocorrência de 'x' será substituída.
+        OBS2: 'x' é case sensitive.
+        
+        */
+
+        console.log('1)', str.replace('Microsoft', 'Google'));
+        console.log('2)', str.replace('microsoft', 'Google'));
+        console.log('3)', str.replace('MICROSOFT', 'Google'));
+
+        /*
+        Expressões regulares (REGEX).
+        */
+
+        console.log('4)', str.replace(/Microsoft/g, 'Google'));
+        console.log('5)', str.replace(/microsoft/i, 'Google'));
+        console.log('6)', str.replace(/MICROSOFT/i, 'Google'));
+        console.log('7)', str.replace(/micROsoft/gi, 'Google'));
+
+    </script>
+
+</body>
+
+</html>
